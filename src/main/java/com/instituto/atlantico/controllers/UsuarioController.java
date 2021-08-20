@@ -34,12 +34,12 @@ public class UsuarioController {
 		return this.usuarioService.cadastrarUsuario(usuario);
 	}
 
-	@GetMapping
+	@GetMapping("/list")
 	public List listarUsuarios() throws Exception {
 		return usuarioService.listarUsuarios();
 	}
 
-	@GetMapping("{id}")
+	@GetMapping("/list/{id}")
 	public Usuario findById(@PathVariable Integer id) throws Exception {
 		return usuarioService.buscarPorId(id);
 
@@ -51,7 +51,7 @@ public class UsuarioController {
 		this.usuarioService.deletarUsuario(id);
 	}
 
-	@PutMapping("{id}")
+	@PutMapping("/up/{id}")
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void updateUsuario(@PathVariable Integer id, @RequestBody @Valid Usuario usersAtualizado) throws Exception {
 		this.usuarioService.atualizarUsuario(id, usersAtualizado);

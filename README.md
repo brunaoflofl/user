@@ -4,6 +4,7 @@
 
 <h3>Vamos la..</h3>
 
+<<<<<<< HEAD
 <h3>1.</h3> No terminal:
 
 git clone https://github.com/brunaoflofl/ia-teste-tecnico.git
@@ -19,6 +20,16 @@ https://_SEU_TOKEN_@github.com/Instituto-Atlantico/backend-java-challenge_bruna_
 file -> import -> existing maven project -> user-app
 
 selecione o projeto clonado
+=======
+<h3>1.</h3> Faça o download
+
+code -> download.zip
+
+<h3>2.</h3> Na IDE de sua preferencia:
+
+file -> import -> existing maven project -> selecione o projeto baixado
+
+>>>>>>> dd2fa671f1228f8c7e50ea8145e8c5040e1abc97
 espere carregar as dependencias
 
 mvn install

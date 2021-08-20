@@ -41,49 +41,40 @@ public class Usuario {
 	@JsonFormat(pattern = "dd/MM/yyyy")
 	private LocalDate createdDate;
 
-	
 	@Column(name = "enable")
-    private boolean enabled;
-
+	private boolean enabled;
 
 	@PrePersist
 	public void prePersist() {
 		setCreatedDate(LocalDate.now());
 	}
 
-    @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(joinColumns = @JoinColumn(name = "user_id"),
-            inverseJoinColumns = @JoinColumn(name = "role_id"))
-    private Collection<Role> roles;
+	@ManyToMany(fetch = FetchType.EAGER)
+	@JoinTable(joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
+	private Collection<Role> roles;
 
 	public String getPassword() {
 		BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 		return this.password = passwordEncoder.encode(password);
 	}
 
-
-	public Usuario(String email, String password, String name, LocalDate createdDate, boolean enabled, String username) {
-        this.email = email;
-        this.password = password;
-        this.name = name;       
+	public Usuario(String email, String password, String name, LocalDate createdDate, boolean enabled,
+			String username) {
+		this.email = email;
+		this.password = password;
+		this.name = name;
 		this.createdDate = createdDate;
-        this.enabled = enabled;
-        this.username = username;
-    }
-
-
+		this.enabled = enabled;
+		this.username = username;
+	}
 
 	public boolean isEnabled() {
 		return enabled;
 	}
 
-
-
 	public void setEnabled(boolean enabled) {
 		this.enabled = enabled;
 	}
-
-
 
 	public Usuario() {
 		super();
@@ -105,7 +96,6 @@ public class Usuario {
 	public void setId(Integer id) {
 		this.id = id;
 	}
-
 
 	public String getName() {
 		return name;

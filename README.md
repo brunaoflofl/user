@@ -26,13 +26,15 @@ URLs:
 
 #  Login
 
+http://localhost:8080/login Login funcionando!
+
+
 username: admin, senha: 123; 
 
 username: user, senha: 123;
 
 *Admin tem acesso a pag http://localhost:8080/admin
 
-http://localhost:8080/login Login funcionando!
 
 
 #  Inserir um usuario:

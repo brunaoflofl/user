@@ -40,13 +40,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter implements WebM
 	protected void configure(HttpSecurity http) throws Exception {
 
 		http.authorizeRequests().antMatchers("/", "/h2-console/**").permitAll()
-				.antMatchers(HttpMethod.POST, "/api/users").permitAll().antMatchers("/admin")
-				.access("hasAuthority('ADMIN')").anyRequest().authenticated().and().formLogin().loginPage("/login")
-				.permitAll().and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
-				.logoutSuccessUrl("/login").permitAll().and().httpBasic();
-
+				.antMatchers(HttpMethod.POST, "/api/users").permitAll()
+				.antMatchers("/login").permitAll()
+				.antMatchers("/api/users/**").permitAll();
 		http.csrf().disable();
 		http.headers().frameOptions().disable();
+			/*	.antMatchers(HttpMethod.GET, "/api/users/**").authenticated();	
+			    .access("hasAuthority('ADMIN')").anyRequest().authenticated().and().formLogin().loginPage("/login")
+				.permitAll().and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
+				.logoutSuccessUrl("/login").permitAll().and().httpBasic();		
+		*/
 
 	}
 

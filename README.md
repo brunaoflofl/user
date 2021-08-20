@@ -59,7 +59,6 @@ body: USER
 body: ADMIN
 
  {
-    "id": 1,
     "username": "admin",
     "password": "$2a$10$LxUr3WuUqcbua5BXNgwu4.3YtwQtWam7//eTNMtXDBpn5flXm1tIm",
     "name": "TestAdmin",

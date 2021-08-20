@@ -11,6 +11,7 @@ git clone https://github.com/brunaoflofl/ia-teste-tecnico.git
 INFO: O git adicionou uma mudança de segurança. Agora precisa criar um token e passar seu token na solicitação.
 
 exemplo:  git clone https://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@github.com/Instituto-Atlantico/backend-java-challenge_bruna_lima.git
+
 https://_SEU_TOKEN_@github.com/Instituto-Atlantico/backend-java-challenge_bruna_lima.git
 
 <h3>2.</h3> Na IDE de sua preferencia:

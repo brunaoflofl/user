@@ -20,7 +20,6 @@ suba o projeto como spring-boot-app
 
 <h3>3.</h3> Vamos testar..
 
-<h4>PARA TESTE INSOMNIA/POSTMAN:</h4> 
 
 URLs: 
 
@@ -35,6 +34,7 @@ username: user, senha: 123;
 
 *Admin tem acesso a pag http://localhost:8080/admin
 
+<h4>PARA TESTE INSOMNIA/POSTMAN:</h4> 
 
 
 #  Inserir um usuario:

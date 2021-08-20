@@ -4,23 +4,6 @@
 
 <h3>Vamos la..</h3>
 
-<<<<<<< HEAD
-<h3>1.</h3> No terminal:
-
-git clone https://github.com/brunaoflofl/ia-teste-tecnico.git
-
-INFO: O git adicionou uma mudança de segurança. Agora precisa criar um token e passar seu token na solicitação.
-
-exemplo:  git clone https://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@github.com/Instituto-Atlantico/backend-java-challenge_bruna_lima.git
-
-https://_SEU_TOKEN_@github.com/Instituto-Atlantico/backend-java-challenge_bruna_lima.git
-
-<h3>2.</h3> Na IDE de sua preferencia:
-
-file -> import -> existing maven project -> user-app
-
-selecione o projeto clonado
-=======
 <h3>1.</h3> Faça o download
 
 code -> download.zip
@@ -29,7 +12,6 @@ code -> download.zip
 
 file -> import -> existing maven project -> selecione o projeto baixado
 
->>>>>>> dd2fa671f1228f8c7e50ea8145e8c5040e1abc97
 espere carregar as dependencias
 
 mvn install
@@ -42,45 +24,69 @@ suba o projeto como spring-boot-app
 
 URLs: 
 
+#  Login
+
+username: admin, senha: 123;
+username: user, senha: 123;
+
+
+http://localhost:8080/login Login funcionando!
+
+
 #  Inserir um usuario:
 
 POST http://localhost:8080/api/users
 
-body: 
+body: USER
 
 {
-	"username": "teste2",
-	"password": "123",
-	"name": "teste atualizando usuario",
-	"email": "test@email.com",
-	"permissao": false 
+  "username": "user2",
+  "password": "123",
+  "name": "TestUsuario",
+  "email": "test@test.com",
+  "createdDate": "20/08/2021",
+  "enabled": true,
+  "roles": [
+    {
+      "id": 1,
+      "role": "USER"
+    }
+  ]
 }
 
-Permissao retorna USER ou ADMIN.
+body: ADMIN
 
-
-#  Login
-
-username: teste2, senha: 123;
-
-http://localhost:8080/login  Login não autentica.
-
+ {
+    "id": 1,
+    "username": "admin",
+    "password": "$2a$10$LxUr3WuUqcbua5BXNgwu4.3YtwQtWam7//eTNMtXDBpn5flXm1tIm",
+    "name": "TestAdmin",
+    "email": "test@test.com",
+    "createdDate": "20/08/2021",
+    "enabled": true,
+    "roles": [
+      {
+        "id": 2,
+        "role": "ADMIN"
+      }
+    ]
+  },
 
 
 #  Listar todos:
 
 Só consigo acessar as urls abaixo configurando o SecurityConfig com .permitAll().
 
-GET http://localhost:8080/api/users
+GET http://localhost:8080/api/users/list
 
 #  Listar usuario especifico:
 
-GET http://localhost:8080/api/users/1
+GET http://localhost:8080/api/users/list/1
 (lista usuário de id=1)
 
 #  Alterar dados usuario específico:
 
-PUT http://localhost:8080/api/users/1
+PUT http://localhost:8080/api/users/up/1
 (altera dados do usuário de id=1)
 
 #  Deletar usuario especifico:

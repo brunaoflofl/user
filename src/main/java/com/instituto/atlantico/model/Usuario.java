@@ -40,10 +40,9 @@ public class Usuario {
 	@Column(name = "data_cadastro", updatable = false)
 	@JsonFormat(pattern = "dd/MM/yyyy")
 	private LocalDate createdDate;
-
-	@ManyToMany(fetch = FetchType.EAGER)
-	@JoinTable(joinColumns = @JoinColumn(name = "usuario_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
-	private Collection<Role> roles;
+	
+	@Column(name = "permissao")
+	private boolean permissao;
 
 	@PrePersist
 	public void prePersist() {
@@ -55,8 +54,17 @@ public class Usuario {
 		return this.password = passwordEncoder.encode(password);
 	}
 
+	public String getPermissao() {
+		return this.permissao ? "ADMIN" : "USER";
+	}
+
+	public void setPermissao(boolean permissao) {
+		this.permissao = permissao;
+	}
+
+
 	public Usuario(Integer id, String username, String password, String name, String email, LocalDate createdDate,
-			Collection<Role> roles) {
+			boolean permissao) {
 		super();
 		this.id = id;
 		this.username = username;
@@ -64,7 +72,7 @@ public class Usuario {
 		this.name = name;
 		this.email = email;
 		this.createdDate = createdDate;
-		this.roles = roles;
+		this.permissao = permissao;
 	}
 
 	public Usuario() {
@@ -80,13 +88,6 @@ public class Usuario {
 		this.id = id;
 	}
 
-	public Collection<Role> getRoles() {
-		return roles;
-	}
-
-	public void setRoles(Collection<Role> roles) {
-		this.roles = roles;
-	}
 
 	public String getName() {
 		return name;

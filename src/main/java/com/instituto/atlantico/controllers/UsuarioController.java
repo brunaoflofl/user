@@ -5,6 +5,7 @@ import java.util.List;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -22,6 +23,7 @@ import com.instituto.atlantico.service.UsuarioService;
 
 @RestController
 @RequestMapping("/api/users")
+@EnableCaching
 @CrossOrigin("http://localhost:8080")
 public class UsuarioController {
 

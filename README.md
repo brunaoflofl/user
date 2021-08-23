@@ -77,8 +77,8 @@ body: USER
 body: ADMIN
 
  {
-    "username": "admin",
-    "password": "$2a$10$LxUr3WuUqcbua5BXNgwu4.3YtwQtWam7//eTNMtXDBpn5flXm1tIm",
+    "username": "admin2",
+    "password": "123",
     "name": "TestAdmin",
     "email": "test@test.com",
     "createdDate": "20/08/2021",
@@ -118,11 +118,23 @@ PUT http://localhost:8080/api/users/up/3
 
 ![image](https://user-images.githubusercontent.com/39420860/130432288-fe3dd220-43dc-4742-96f9-638d335dbedd.png)
 
+Alterado
+
+![image](https://user-images.githubusercontent.com/39420860/130432512-25b9a2f6-fa94-464a-a896-da7b90379ffb.png)
+
+
 
 #  Deletar usuario especifico:
 
-DELETE http://localhost:8080/api/users/1
-(exclui usuário de id=1)
+DELETE http://localhost:8080/api/users/3
+(exclui usuário de id=3)
+
+![image](https://user-images.githubusercontent.com/39420860/130432598-141e188c-46d0-4f8f-b1f5-34c40d428fe5.png)
+
+Usuario 3 deletado
+
+![image](https://user-images.githubusercontent.com/39420860/130432739-31b77e83-7709-4189-b113-b9b76bbfa54f.png)
+
 
 
 <h2>Obrigada!!!</h2>

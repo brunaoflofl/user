@@ -139,19 +139,43 @@ Usuario 3 deletado
 
 ![image](https://user-images.githubusercontent.com/39420860/130432739-31b77e83-7709-4189-b113-b9b76bbfa54f.png)
 
-<h2>Redis</h2>
+<h1>Redis</h1>
 
 Rode Keys * e listará as sessões:
   
   ![image](https://user-images.githubusercontent.com/39420860/130433251-b88c37e5-c994-41b7-b469-192affdfb3ed.png)
   
-  Está guardando as sessões que realizei o login:
+  Está listando as sessões que realizei o login:
   
   ![image](https://user-images.githubusercontent.com/39420860/130433525-f7e5fe47-bb2f-459c-b8a4-a4885472c01b.png)
+  
+  
+  ![image](https://user-images.githubusercontent.com/39420860/130433956-0aad3957-e121-446e-81f8-4c3d007fcd12.png)
+
+
+<h1>RabbitMQ</h1>
+
+Vamos enviar o email: 
+
+http://localhost:8080/email
+
+Body:
+
+{
+  "idEmail": "1",
+  "email": "email enviado"
+}
+
+![image](https://user-images.githubusercontent.com/39420860/130434062-19506690-bac8-4528-9789-74867dfc24a9.png)
+
+
+![image](https://user-images.githubusercontent.com/39420860/130434319-7fd516b8-3404-4b40-9476-2fde1fb272d1.png)
+
+![image](https://user-images.githubusercontent.com/39420860/130434486-5d9e44c7-165d-4292-a217-20b51f607082.png)
 
 
 
 <h2>Obrigada!!!</h2>
 
-<h3>INFO: A aplicação não está cumprindo todos os passos solicitados. Como havia conversado com o Kaio, tive um pouco de dor de cabeça com o spring security devido a esses erros de autenticação. Enviei como estava e vou adicionando alterações especificadas no bonus e a mensageria.</h3>
+
 

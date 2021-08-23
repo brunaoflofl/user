@@ -43,7 +43,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter implements WebM
 	                .antMatchers("/", "/h2-console/**").permitAll()
 	                .antMatchers(HttpMethod.POST, "/api/users", "/email" ).permitAll()
 	                .antMatchers("/admin").access("hasAuthority('ADMIN')")
-	                .anyRequest().authenticated()
+	                .anyRequest().permitAll()
 	                .and().formLogin().loginPage("/login").permitAll()
 	                .and()
 	                .logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"))

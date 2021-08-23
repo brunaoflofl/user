@@ -4,6 +4,7 @@
 
 <h3>Vamos la..</h3>
 
+
 <h3>1.</h3> Faça o download
 
 code -> download.zip
@@ -21,6 +22,12 @@ suba o projeto como spring-boot-app
 <h3>3.</h3> Vamos testar..
 
 
+Vamos subir o serviço externo do redis:
+
+1. docker run --name meu-redis -d -p 6379:6379 redis redis-server
+2. docker exec -it meu-redis redis-cli
+
+
 URLs: 
 
 #  Login
@@ -31,6 +38,9 @@ http://localhost:8080/login Login funcionando!
 
 
 username: admin, senha: 123; 
+
+![image](https://user-images.githubusercontent.com/39420860/130431136-311fcc18-25c5-4a5d-9484-b75c3045ad5f.png)
+
 
 username: user, senha: 123;
 

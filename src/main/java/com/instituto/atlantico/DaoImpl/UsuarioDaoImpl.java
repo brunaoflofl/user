@@ -36,8 +36,8 @@ public class UsuarioDaoImpl implements UsuarioDao {
 		return usuario;
 
 	}
-
-	public List<Usuario> listarUsuarios() {
+	@Override
+	public List<Usuario> listarUsuarios() throws Exception {
 		EntityManager entityManager = em.createEntityManager();
 		return entityManager.createQuery("FROM " + Usuario.class.getName()).getResultList();
 	}
@@ -54,8 +54,8 @@ public class UsuarioDaoImpl implements UsuarioDao {
 		}
 		return usuario;
 	}
-
-	public void remove(Usuario usuario) {
+	@Override
+	public void remove(Usuario usuario) throws Exception {
 		EntityManager entityManager = em.createEntityManager();
 
 		try {
@@ -70,7 +70,7 @@ public class UsuarioDaoImpl implements UsuarioDao {
 	}
 
 	@Override
-	public void deletarUsuario(Integer id) {
+	public void deletarUsuario(Integer id) throws Exception {
 		try {
 			Usuario usuario = buscarPorId(id);
 			remove(usuario);

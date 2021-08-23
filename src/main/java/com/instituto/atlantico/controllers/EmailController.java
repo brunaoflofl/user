@@ -27,7 +27,10 @@ public class EmailController {
 	@ResponseStatus(HttpStatus.OK)
 	public ResponseEntity enviarEmail(@RequestBody @Valid EmailDTO email) throws Exception {
 		this.service.enviaMensagem(RabbitmqConstantes.FILA_EMAIL, email);
+		System.out.println("------------------------------------");
+		System.out.println("Enviando mensagem para o RabbitMQ....");
 		return new ResponseEntity(HttpStatus.OK);
+
 
 	}		
 

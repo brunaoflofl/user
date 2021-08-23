@@ -15,4 +15,6 @@ public interface UsuarioDao {
 	public void deletarUsuario(Integer id) throws Exception;
 
 	public void atualizarUsuario(Integer id, Usuario usersAtualizado) throws Exception;
+
+	void remove(Usuario usuario) throws Exception;
 }

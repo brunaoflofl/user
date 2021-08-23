@@ -154,7 +154,7 @@ Está listando as sessões do usuśrio:
 
 <h1>RabbitMQ</h1>
 
-Crie o arquivo docker-compose.yml em app-user -> docker-compose.yml
+Acesse o arquivo docker-compose.yml em app-user -> docker-compose.yml
 
 execute no terminal docker-compose up -d
 
@@ -190,6 +190,8 @@ Após enviar o email a mensagem é enviada ao rabbitmq e depois consumida pelo c
 
 ![image](https://user-images.githubusercontent.com/39420860/130434866-7c75b1dd-8f6e-4ee0-88e1-471ebb97f47b.png)
 
+
+<h1>Profile</h1>
 
 
 Ambiente DEV

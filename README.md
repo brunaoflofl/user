@@ -160,6 +160,9 @@ execute no terminal docker-compose up -d
 
 Acesse http://localhost:15672
 
+![image](https://user-images.githubusercontent.com/39420860/130442066-240b57cb-4ec1-4873-a593-477f3069db57.png)
+
+
 Faça o login: usermane: admin, senha: 1234:
 
 

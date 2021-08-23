@@ -29,6 +29,7 @@ public class UsuarioController {
 
 	@Autowired
 	private UsuarioService usuarioService;
+	
 
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
@@ -37,24 +38,26 @@ public class UsuarioController {
 	}
 
 	@GetMapping("/list")
+	@ResponseStatus(HttpStatus.OK)
 	public List listarUsuarios() throws Exception {
 		return usuarioService.listarUsuarios();
 	}
 
 	@GetMapping("/list/{id}")
+	@ResponseStatus(HttpStatus.OK)
 	public Usuario findById(@PathVariable Integer id) throws Exception {
 		return usuarioService.buscarPorId(id);
 
 	}
 
 	@DeleteMapping("{id}")
-	@ResponseStatus(HttpStatus.NO_CONTENT)
+	@ResponseStatus(HttpStatus.OK)
 	public void deletar(@PathVariable Integer id) throws Exception {
 		this.usuarioService.deletarUsuario(id);
 	}
 
 	@PutMapping("/up/{id}")
-	@ResponseStatus(HttpStatus.NO_CONTENT)
+	@ResponseStatus(HttpStatus.OK)
 	public void updateUsuario(@PathVariable Integer id, @RequestBody @Valid Usuario usersAtualizado) throws Exception {
 		this.usuarioService.atualizarUsuario(id, usersAtualizado);
 	}

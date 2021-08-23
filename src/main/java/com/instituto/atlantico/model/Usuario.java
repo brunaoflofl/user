@@ -1,5 +1,6 @@
 package com.instituto.atlantico.model;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Collection;
 
@@ -19,7 +20,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 @Entity
-public class Usuario {
+public class Usuario implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

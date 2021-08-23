@@ -20,7 +20,7 @@ import com.instituto.atlantico.service.impl.UsuarioDetail;
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter implements WebMvcConfigurer {
 
-	  @Bean
+	  	@Bean
 	    public static BCryptPasswordEncoder passwordEncoder(){
 	        return new BCryptPasswordEncoder();
 	    }
@@ -41,7 +41,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter implements WebM
 	    protected void configure(HttpSecurity http) throws Exception {
 	        http.authorizeRequests()
 	                .antMatchers("/", "/h2-console/**").permitAll()
-	                .antMatchers(HttpMethod.POST, "/api/users" ).permitAll()
+	                .antMatchers(HttpMethod.POST, "/api/users", "/email" ).permitAll()
 	                .antMatchers("/admin").access("hasAuthority('ADMIN')")
 	                .anyRequest().authenticated()
 	                .and().formLogin().loginPage("/login").permitAll()

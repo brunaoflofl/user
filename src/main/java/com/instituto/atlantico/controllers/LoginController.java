@@ -1,23 +1,21 @@
 package com.instituto.atlantico.controllers;
 
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class LoginController {
 
 	@RequestMapping("/login")
-	public String login(HttpSession session, HttpServletRequest request) {
+	public String login(HttpSession session) {
 		return "login";
 	}		
 	
 
 	@RequestMapping("/")
-	public String index() {
+	public String index(HttpSession session) {
 		return "index";
 	}
 
@@ -28,12 +26,12 @@ public class LoginController {
 	}
 
 	@RequestMapping("/admin")
-	public String admin() {
+	public String admin(HttpSession session) {
 		return "admin";
 	}
 
 	@RequestMapping("/success")
-	public String success() {
+	public String success(HttpSession session) {
 		return "success";
 	}
 

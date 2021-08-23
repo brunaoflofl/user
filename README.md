@@ -27,6 +27,10 @@ Vamos subir o serviço externo do redis:
 1. docker run --name meu-redis -d -p 6379:6379 redis redis-server
 2. docker exec -it meu-redis redis-cli
 
+![image](https://user-images.githubusercontent.com/39420860/130433049-98605cfd-7136-4fe0-bde8-5660e4eba32b.png)
+
+Vamos acompanhar a sessão após o login
+
 
 URLs: 
 
@@ -135,6 +139,9 @@ Usuario 3 deletado
 
 ![image](https://user-images.githubusercontent.com/39420860/130432739-31b77e83-7709-4189-b113-b9b76bbfa54f.png)
 
+<h2>Redis</h2>
+  
+  ![image](https://user-images.githubusercontent.com/39420860/130433251-b88c37e5-c994-41b7-b469-192affdfb3ed.png)
 
 
 <h2>Obrigada!!!</h2>

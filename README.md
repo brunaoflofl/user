@@ -154,25 +154,9 @@ Está listando as sessões do usuśrio:
 
 <h1>RabbitMQ</h1>
 
-Crie um arquivo docker-compose.yml
+Crie o arquivo docker-compose.yml em app-user -> docker-compose.yml
 
-services:
-  test-ia:
-    image: rabbitmq:3-management
-    container_name: test-ia
-    restart: always
-    ports: 
-      - 5672:5672
-      - 15672:15672
-    volumes: 
-      - ./dados:/var/lib/rabbitmq/
-    environment: 
-      - RABBITMQ_DEFAULT_USER=admin
-      - RABBITMQ_DEFAULT_PASS=123456
-
-![image](https://user-images.githubusercontent.com/39420860/130439325-359ac54e-e304-4f39-bcae-bdccce61d0f3.png)
-
-na pasta do arquivo execute docker-compose up -d
+execute no terminal docker-compose up -d
 
 Acesse http://localhost:15672
 

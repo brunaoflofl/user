@@ -141,23 +141,22 @@ Usuario 3 deletado
 
 <h1>Redis</h1>
 
-Rode Keys * e listará as sessões:
+no terminal rode Keys * e listará as sessões:
   
   ![image](https://user-images.githubusercontent.com/39420860/130433251-b88c37e5-c994-41b7-b469-192affdfb3ed.png)
   
-  Está listando as sessões que realizei o login:
+Está listando as sessões do usuśrio:
   
   ![image](https://user-images.githubusercontent.com/39420860/130433525-f7e5fe47-bb2f-459c-b8a4-a4885472c01b.png)
   
   
-  ![image](https://user-images.githubusercontent.com/39420860/130433956-0aad3957-e121-446e-81f8-4c3d007fcd12.png)
 
 
 <h1>RabbitMQ</h1>
 
 Vamos enviar o email: 
 
-http://localhost:8080/email
+POST http://localhost:8080/email
 
 Body:
 
@@ -168,10 +167,20 @@ Body:
 
 ![image](https://user-images.githubusercontent.com/39420860/130434062-19506690-bac8-4528-9789-74867dfc24a9.png)
 
+Acesse http://localhost:15672
+
+Faça o login: usermane: admin, senha: 1234:
+
+Em http://localhost:15672/#/connections vemos a conexão criada:
 
 ![image](https://user-images.githubusercontent.com/39420860/130434319-7fd516b8-3404-4b40-9476-2fde1fb272d1.png)
 
+Em http://localhost:15672/#/queues vemos a fila criada 
+
+
 ![image](https://user-images.githubusercontent.com/39420860/130434486-5d9e44c7-165d-4292-a217-20b51f607082.png)
+
+Após enviar o email a mensagem é enviada ao rabbitmq e depois consumida pelo consumidor da aplicação user-app:
 
 ![image](https://user-images.githubusercontent.com/39420860/130434866-7c75b1dd-8f6e-4ee0-88e1-471ebb97f47b.png)
 

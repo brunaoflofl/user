@@ -172,6 +172,12 @@ services:
 
 ![image](https://user-images.githubusercontent.com/39420860/130439325-359ac54e-e304-4f39-bcae-bdccce61d0f3.png)
 
+na pasta do arquivo execute docker-compose up -d
+
+Acesse http://localhost:15672
+
+Faça o login: usermane: admin, senha: 1234:
+
 
 Vamos enviar o email: 
 
@@ -186,9 +192,6 @@ Body:
 
 ![image](https://user-images.githubusercontent.com/39420860/130434062-19506690-bac8-4528-9789-74867dfc24a9.png)
 
-Acesse http://localhost:15672
-
-Faça o login: usermane: admin, senha: 1234:
 
 Em http://localhost:15672/#/connections vemos a conexão criada:
 

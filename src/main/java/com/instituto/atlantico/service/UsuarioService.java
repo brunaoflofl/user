@@ -10,7 +10,7 @@ public interface UsuarioService {
 
 	public List listarUsuarios() throws Exception;
 
-	public Usuario buscarPorId(Integer id) throws Exception;
+	public List buscarPorId(Integer id) throws Exception;
 
 	public void deletarUsuario(Integer id) throws Exception;
 

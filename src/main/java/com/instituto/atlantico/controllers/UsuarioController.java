@@ -45,7 +45,7 @@ public class UsuarioController {
 
 	@GetMapping("/list/{id}")
 	@ResponseStatus(HttpStatus.OK)
-	public Usuario findById(@PathVariable Integer id) throws Exception {
+	public List findById(@PathVariable Integer id) throws Exception {
 		return usuarioService.buscarPorId(id);
 
 	}

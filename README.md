@@ -140,8 +140,15 @@ Usuario 3 deletado
 ![image](https://user-images.githubusercontent.com/39420860/130432739-31b77e83-7709-4189-b113-b9b76bbfa54f.png)
 
 <h2>Redis</h2>
+
+Rode Keys * e listará as sessões:
   
   ![image](https://user-images.githubusercontent.com/39420860/130433251-b88c37e5-c994-41b7-b469-192affdfb3ed.png)
+  
+  Está guardando as sessões que realizei o login:
+  
+  ![image](https://user-images.githubusercontent.com/39420860/130433525-f7e5fe47-bb2f-459c-b8a4-a4885472c01b.png)
+
 
 
 <h2>Obrigada!!!</h2>

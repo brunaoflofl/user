@@ -205,16 +205,12 @@ Após enviar o email a mensagem é enviada ao rabbitmq e depois consumida pelo c
 
 Ambiente DEV
 
-![image](https://user-images.githubusercontent.com/39420860/130438489-d64bbebb-7c0b-4b5c-80e8-427f744d9398.png)
-
-![image](https://user-images.githubusercontent.com/39420860/130438621-051a6748-1689-4e29-b128-fde788f6314d.png)
-
+![image](https://user-images.githubusercontent.com/39420860/130669955-35653ffa-a6d0-413d-97be-8a02ecbffbc3.png)
+![image](https://user-images.githubusercontent.com/39420860/130670140-8bf41a3d-9b5d-46a5-91c3-1f82b2d91e35.png)
 Ambiente PROD
 
-![image](https://user-images.githubusercontent.com/39420860/130438793-44d96eb4-6908-4ad9-9b71-6bd6d15a7a84.png)
-
-![image](https://user-images.githubusercontent.com/39420860/130438708-64e63801-1793-48a5-9400-97eb4b529c9a.png)
-
+![image](https://user-images.githubusercontent.com/39420860/130670034-5d277621-12aa-4428-af3e-00033f26ad30.png)
+![image](https://user-images.githubusercontent.com/39420860/130670224-22b439df-fafe-4d8a-9b94-3a66a03c2a6d.png)
 
 
 

@@ -31,6 +31,24 @@ Vamos subir o serviço externo do redis:
 
 Vamos acompanhar a sessão após o login
 
+  
+
+
+<h1>RabbitMQ</h1>
+
+Acesse o arquivo docker-compose.yml em app-user -> docker-compose.yml
+
+execute no terminal docker-compose up -d
+
+Acesse http://localhost:15672
+
+![image](https://user-images.githubusercontent.com/39420860/130442066-240b57cb-4ec1-4873-a593-477f3069db57.png)
+
+
+Faça o login: usermane: admin, senha: 123456;
+
+
+
 
 URLs: 
 
@@ -149,22 +167,6 @@ Está listando as sessões do usuśrio:
   
   ![image](https://user-images.githubusercontent.com/39420860/130433525-f7e5fe47-bb2f-459c-b8a4-a4885472c01b.png)
   
-  
-
-
-<h1>RabbitMQ</h1>
-
-Acesse o arquivo docker-compose.yml em app-user -> docker-compose.yml
-
-execute no terminal docker-compose up -d
-
-Acesse http://localhost:15672
-
-![image](https://user-images.githubusercontent.com/39420860/130442066-240b57cb-4ec1-4873-a593-477f3069db57.png)
-
-
-Faça o login: usermane: admin, senha: 1234:
-
 
 Vamos enviar o email: 
 

@@ -1,5 +1,9 @@
 # backend-java-challenge_bruna_lima
 
+![image](https://user-images.githubusercontent.com/39420860/130669259-041601df-f940-4fdf-b480-7a17e649ef1b.png)![image](https://user-images.githubusercontent.com/39420860/130668879-4d54a0ec-fa5f-4ea4-98e6-b673b3e5b0d4.png)![image](https://user-images.githubusercontent.com/39420860/130669007-c3d15fab-f08c-452b-9aee-7ca441ea62c8.png)![image](https://user-images.githubusercontent.com/39420860/130669097-b412b34f-113c-4deb-a938-c2968c6cefee.png)
+
+
+
 # ia-teste-tecnico
 
 <h3>Vamos la..</h3>
@@ -210,11 +214,6 @@ Ambiente PROD
 ![image](https://user-images.githubusercontent.com/39420860/130438793-44d96eb4-6908-4ad9-9b71-6bd6d15a7a84.png)
 
 ![image](https://user-images.githubusercontent.com/39420860/130438708-64e63801-1793-48a5-9400-97eb4b529c9a.png)
-
-
-
-
-
 
 
 

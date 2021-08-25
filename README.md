@@ -21,7 +21,6 @@ espere carregar as dependencias
 
 mvn install
 
-suba o projeto como spring-boot-app
 
 <h3>3.</h3> Vamos testar..
 
@@ -51,6 +50,9 @@ Acesse http://localhost:15672
 
 Faça o login: usermane: admin, senha: 123456;
 
+
+
+<h2>Suba o projeto como spring-boot-app</h2>
 
 
 

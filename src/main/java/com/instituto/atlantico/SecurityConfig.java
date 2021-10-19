@@ -13,8 +13,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-import com.instituto.atlantico.repository.UsuarioRepository;
-import com.instituto.atlantico.service.impl.UsuarioDetail;
+import com.instituto.atlantico.users.repository.UsuarioRepository;
+import com.instituto.atlantico.users.service.impl.UsuarioDetail;
 
 @Configuration
 @EnableWebSecurity

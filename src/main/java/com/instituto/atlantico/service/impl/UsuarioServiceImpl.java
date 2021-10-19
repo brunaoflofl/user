@@ -26,7 +26,7 @@ public class UsuarioServiceImpl implements UsuarioService {
 	}
 
 	@Override
-	public List buscarPorId(Integer id) throws Exception {
+	public Usuario buscarPorId(Integer id) throws Exception {
 		return this.usuarioDao.buscarPorId(id);
 
 	}

@@ -16,6 +16,7 @@ public class Email implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	public String idEmail;
+	
 	@Column(name="email")
 	public String email;
 	

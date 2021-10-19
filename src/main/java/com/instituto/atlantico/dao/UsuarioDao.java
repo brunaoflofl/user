@@ -10,7 +10,7 @@ public interface UsuarioDao {
 
 	public List listarUsuarios() throws Exception;
 
-	public List buscarPorId(Integer id) throws Exception;
+	public Usuario buscarPorId(Integer id) throws Exception;
 
 	public void deletarUsuario(Integer id) throws Exception;
 

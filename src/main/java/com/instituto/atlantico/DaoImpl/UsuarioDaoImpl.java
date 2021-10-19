@@ -20,7 +20,9 @@ public class UsuarioDaoImpl implements UsuarioDao {
 
 	@Override
 	public Usuario cadastrarUsuario(Usuario usuario) throws Exception {
+		
 		EntityManager entityManager = em.createEntityManager();
+		
 		try {
 
 			entityManager.getTransaction().begin();
@@ -37,22 +39,30 @@ public class UsuarioDaoImpl implements UsuarioDao {
 		return usuario;
 
 	}
+	
 	@Override
 	public List<Usuario> listarUsuarios() throws Exception {
+		
 		EntityManager entityManager = em.createEntityManager();
+		
 		return entityManager.createQuery("from " + Usuario.class.getName()).getResultList();
 	}
 
 	@Override
-	public List buscarPorId(Integer id) throws Exception {
+	public Usuario buscarPorId(Integer id) throws Exception {
+		
 		EntityManager entityManager = em.createEntityManager();
+		
 		Query query = entityManager.createQuery("from Usuario u where u.id=:id");
 		query.setParameter("id", id);
-		return query.getResultList();
+		return (Usuario) query.getSingleResult();
 	}
+	
 	@Override
 	public void deletarUsuario(Integer id) throws Exception {
+		
 		EntityManager entityManager = em.createEntityManager();
+		
 		entityManager.getTransaction().begin();
 		Query query = entityManager.createQuery("delete from Usuario u where u.id=:id").setParameter("id", id);
 			  int rowsDeleted = query.executeUpdate();
@@ -63,8 +73,10 @@ public class UsuarioDaoImpl implements UsuarioDao {
 
 	@Override
 	public void atualizarUsuario(Integer id, Usuario usersAtualizado) throws Exception {
+		
 		EntityManager entityManager = em.createEntityManager();
-		Usuario user = (Usuario) buscarPorId(id);
+		
+		Usuario user = buscarPorId(id);
 		usersAtualizado.setId(user.getId());
 		cadastrarUsuario(usersAtualizado);
 

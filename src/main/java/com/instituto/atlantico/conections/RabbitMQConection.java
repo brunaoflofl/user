@@ -36,9 +36,10 @@ public class RabbitMQConection {
     return new Binding(fila.getName(), Binding.DestinationType.QUEUE, troca.getName(), fila.getName(), null);
   }
 
-  //está função é executada assim que nossa classe é instanciada pelo Spring, devido a anotação @Component
+  //está função é executada assim que nossa classe é instanciada pelo Spring
   @PostConstruct
   private void adiciona(){
+	  
     Queue filaEmail = this.fila(RabbitmqConstantes.FILA_EMAIL);
     DirectExchange troca = this.trocaDireta();
     Binding ligacaoEmail   = this.relacionamento(filaEmail, troca);

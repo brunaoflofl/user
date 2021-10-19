@@ -32,7 +32,9 @@ public class UsuarioDetail implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         try {
+        	
             Usuario usuario = repository.findByUsername(username);
+            
             if(usuario==null){
                 return null;
             }

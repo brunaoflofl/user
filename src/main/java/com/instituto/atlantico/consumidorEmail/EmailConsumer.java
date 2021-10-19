@@ -21,6 +21,7 @@ public class EmailConsumer {
 	private void consumidor(String mensagem) throws JsonProcessingException {
 
 		EmailDTO emailDTO = this.objectMapper.readValue(mensagem, EmailDTO.class);
+		
 		System.out.println("Consumindo ...");
 
 		System.out.println("Email ID: " + emailDTO.getIdEmail());

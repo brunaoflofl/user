@@ -34,7 +34,6 @@ Vamos subir o serviço externo do redis:
 
 Vamos acompanhar a sessão após o login
 
-  
 
 
 <h1>RabbitMQ</h1>
@@ -42,6 +41,9 @@ Vamos acompanhar a sessão após o login
 Acesse o arquivo docker-compose.yml em app-user -> docker-compose.yml
 
 execute no terminal docker-compose up -d
+
+![image](https://user-images.githubusercontent.com/39420860/137993857-b7a27189-0903-46c1-a6af-a34eb2f3ad14.png)
+
 
 Acesse http://localhost:15672
 

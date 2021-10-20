@@ -128,14 +128,14 @@ body: ADMIN
 
 Só consigo acessar as urls abaixo configurando o SecurityConfig com .permitAll().
 
-GET http://localhost:8080/api/users/list
+GET http://localhost:8080/api/users
 
 ![image](https://user-images.githubusercontent.com/39420860/130431923-159a6117-f246-4953-a526-bfb20c2acaca.png)
 
 
 #  Listar usuario especifico:
 
-GET http://localhost:8080/api/users/list/3
+GET http://localhost:8080/api/users/3
 (lista usuário de id=3)
 
 ![image](https://user-images.githubusercontent.com/39420860/130432036-615e377a-4b59-4c7c-97e5-733cf12f78b2.png)
@@ -143,7 +143,7 @@ GET http://localhost:8080/api/users/list/3
 
 #  Alterar dados usuario específico:
 
-PUT http://localhost:8080/api/users/up/3
+PUT http://localhost:8080/api/users/3
 (altera dados do usuário de id=3)
 
 ![image](https://user-images.githubusercontent.com/39420860/130432288-fe3dd220-43dc-4742-96f9-638d335dbedd.png)
